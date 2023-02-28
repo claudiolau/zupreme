@@ -17,8 +17,8 @@ export const Navigation: INavRoute[] = [
   },
   {
     id: 3,
-    route: "/about-us",
-    label: "About us",
+    route: "/about",
+    label: "About",
   },
   {
     id: 4,

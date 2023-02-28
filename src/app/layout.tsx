@@ -1,10 +1,12 @@
-import { Header } from "@/components";
+"use client";
+
 import "./globals.css";
 
-export const metadata = {
-  title: "Zupreme",
-  description: "All - Shop - Zupreme",
-};
+// not supported in 13.2
+// export const metadata = {
+//   title: "Zupreme",
+//   description: "All - Shop - Zupreme",
+// };
 
 export default function RootLayout({
   children,
@@ -13,10 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

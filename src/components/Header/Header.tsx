@@ -1,10 +1,22 @@
+// "use client";
+
 import Link from "next/link";
+import { CapCase } from "@/utils";
 import { INavRoute, Navigation } from "./constants";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 export const Header: React.FC = () => {
+  const router = usePathname();
+  const linkStyle = "font-bold hover:bg-violet-200 rounded-full p-4 flex-wrap";
+
   const routePage = Navigation.map((n: INavRoute) => (
-    <Link className="p-4" key={n.id.toString()} href={n.route.toString()}>
-      {n.label}
+    <Link
+      className={router == n.route ? ` bg-violet-50  ${linkStyle}` : linkStyle}
+      key={n.id.toString()}
+      href={n.route.toString()}
+    >
+      {n.route === "/" ? n.label : CapCase(n.label)}
     </Link>
   ));
 
