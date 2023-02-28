@@ -8,7 +8,7 @@ import React from "react";
 
 export const Header: React.FC = () => {
   const router = usePathname();
-  const linkStyle = "font-bold hover:bg-violet-200 rounded-full p-4 flex-wrap";
+  const linkStyle = "font-bold hover:bg-violet-200 rounded-full mr-8 ";
 
   const routePage = Navigation.map((n: INavRoute) => (
     <Link
@@ -22,8 +22,8 @@ export const Header: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-center pr-4 pl-4">
-        <nav className="items-center p-4 justify-between w-full max-w-4xl mx-auto pt-8 pb-8 text-grey-800">
+      <div className="flex flex-col justify-center p-4">
+        <nav className="items-center p-8 justify-between w-full max-w-4xl mx-auto text-grey-800">
           <div>{routePage}</div>
         </nav>
       </div>
