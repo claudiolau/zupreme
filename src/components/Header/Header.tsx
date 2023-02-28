@@ -8,7 +8,7 @@ import React from "react";
 
 export const Header: React.FC = () => {
   const router = usePathname();
-  const linkStyle = "font-bold hover:bg-violet-200 rounded-full mr-8 ";
+  const linkStyle = "font-bold hover:bg-violet-200 rounded-full mr-8";
 
   const routePage = Navigation.map((n: INavRoute) => (
     <Link

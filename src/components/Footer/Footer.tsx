@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="items-center p-4 justify-between w-full max-w-2xl mx-auto text-grey-800">
+          <span className="items-center p-4 justify-between w-full max-w-2xl mx-auto text-grey-900">
             © 2023{" "}
             <a href="https://flowbite.com/" className="hover:underline">
               Zupreme™
