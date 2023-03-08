@@ -15,6 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>All - Shop - Zupreme</title>
+
       <body>{children}</body>
     </html>
   );
